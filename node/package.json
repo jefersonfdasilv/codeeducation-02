@@ -1,0 +1,13 @@
+{
+  "name": "desafio-02",
+  "version": "1.0.0",
+  "description": "Desafio 02, curso Full Cycle. Code Education",
+  "main": "index.js",
+  "repository": "https://github.com/jefersonfdasilv/codeeducation-02",
+  "author": "Jeferson Ferreira da Silva",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mysql": "^2.18.1"
+  }
+}
