@@ -15,5 +15,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 EXPOSE 3000
 
 RUN npm install pm2 -g
+RUN chmod +x ./.docker/entrypoint.sh
 
-CMD ["pm2-runtime", "app.js"]
+CMD ["node", "app.js"]
