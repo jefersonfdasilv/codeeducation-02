@@ -21,6 +21,8 @@ app.get('/', (req, res) => {
     
     if(typeof name !== 'undefined' && name){
         create(name.trim().toUpperCase(), connection);
+    }else{
+        create('John Doe', connection);
     }
 
     let conteudo = '<h1>Full Cycle Rocks!!!</h1><ul>'
