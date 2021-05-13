@@ -14,4 +14,6 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 
 EXPOSE 3000
 
-CMD ["node","index.js"]
+RUN npm install pm2 -g
+
+CMD ["pm2-runtime", "app.js"]
